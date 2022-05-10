@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ERI CELL</title>
+
+    <!-- css style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- boostrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- goole font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Tomorrow:wght@500&display=swap" rel="stylesheet" />
+  </head>
+  <body id="body">
+    <!-- navbar -->
+    <div class="nav">
+      <div class="container">
+        <a href="#"><img src="img/eri-cell.png" alt="" /></a>
+        
+        <ul>
+          <li><a href="#" class="active">HOME</a></li>
+          <li><a href="#kategori">KATEGORI</a></li>
+          <li><a href="#produk">PRODUK</a></li>
+          <li><a href="#alamat">ALAMAT</a></li>
+          <li><a href="#about">ABOUT</a></li>
+        </ul>
+
+        <ul id="nav-bar">
+          <li><a href="#" class="active">HOME</a></li>
+          <li><a href="#kategori">KATEGORI</a></li>
+          <li><a href="#produk">PRODUK</a></li>
+          <li><a href="#alamat">ALAMAT</a></li>
+          <li><a href="#about">ABOUT</a></li>
+        </ul>
+
+        <div class="bar">
+          <input type="checkbox" id="klik-nav" onclick="navKlik()"> 
+          <label for="klik-nav">
+            <i class="bi bi-x" id="kali"></i>
+          <i class="bi bi-list" id="strip"></i>
+        </label>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir navbar -->
+
+    <!-- whatsapp -->
+    
+    <div class="whatsapp">
+      <input type="checkbox" id="klik" onclick="diklik()">
+      <label for="klik">
+      <div class="bingkai" id="bingkai">
+        <div class="icon">
+          <i class="bi bi-whatsapp"></i>
+        </div>
+      </div>
+    </label>
+     
+    </div>
+
+    <div class="bingkai-nomor" id="bingkai-nomor">
+      <div class="nomor">
+        <a href="https://api.whatsapp.com/send?phone=6285647715796" target="_blank" rel="noopener noreferrer"><p>085647715796</p></a>
+      </div>
+    </div>
+
+    
+
+    
+    <!-- jumbotron -->
+    <div class="jumbotron" id="box_home">
+      <div class="container">
+        <div class="box">
+          <div class="text">
+            <h1>SELAMAT DATANG DI  WEBSAIT RESMI <br> ERI CELL</h1>
+            <p>
+              Disini menyediakan berbagai prodak digital : <br />
+              pulsa, kuota, token listrik, setor listrik, top up uang digital, dll.
+            </p> 
+          </div>   
+          <a href="#kategori"><div class="tombol"><p>LIHAT PRODUK</p> </div></a>
+          
+        </div>
+      </div>
+    </div>
+    <!-- akhir jumbotron -->
+
+    <!-- awal kategori -->
+    <div class="kategori" id="kategori">
+      <div class="section-margin">
+        <div class="container">
+          <h1>KATEGORI</h1>
+          <div class="isi">
+            <div class="posisi">
+              <a href="#pulsa">
+                <div class="barang">
+                  <div class="gambar_barang">
+                    <img src="img/pulsa.jpg" alt="" />
+                  </div>
+                  <p>PULSA</p>
+                </div>
+              </a>
+            </div>
+            <div class="posisi">
+              <a href="#kuota">
+                <div class="barang">
+                  <div class="gambar_barang">
+                    <img src="img/KUOTA.png" alt="" />
+                  </div>
+                  <p>KUOTA</p>
+                </div>
+              </a>
+            </div>
+            <div class="posisi">
+              <a href="#token">
+                <div class="barang">
+                  <div class="gambar_barang">
+                    <img src="img/token.jpg" alt="" />
+                  </div>
+                  <p>TOKEN</p>
+                </div>
+              </a>
+            </div>
+            <div class="posisi">
+              <a href="#listrik">
+                <div class="barang">
+                  <div class="gambar_barang">
+                    <img src="img/listrik.png" alt="" />
+                  </div>
+                  <p>LISTRIK</p>
+                </div>
+              </a>
+            </div>
+            <div class="posisi">
+              <a href="#top-up">
+                <div class="barang">
+                  <div class="gambar_barang">
+                    <img src="img/e-wallet.png" alt="" />
+                  </div>
+                  <p id="produk">E-MONAY</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir kategori -->
+
+    <!-- awal prodak -->
+    <div class="produk" >
+      <div class="container">
+        <h1>PRODUK</h1>
+
+
+        <!-- pulsa -->
+        <div id="pulsa">
+          <p>untuk memesan silahkan bisa hubungi melalui whatsapp berikut ini 085647715786</p>
+          <h3>pulsa :</h3>
+          <p>Di <span>ERI CELL </span> menyediakan pembelian pulsa all operator dengan harga yang bersaing</p>
+          <div id="harga" style="overflow-x: auto">
+            <table>
+              <tr>
+                <th colspan="2"><img src="img/operator/telkomsel.png" alt="Telkomsel" id="pulsa_telkomsel" /></th>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  TELKOMSEL 5 K
+                </td>
+                <td>Rp 7.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  TELKOMSEL 10 K
+                </td>
+                <td>Rp 12.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  TELKOMSEL 15 K
+                </td>
+                <td>Rp 17.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  TELKOMSEL 20 K
+                </td>
+                <td>Rp 22.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  TELKOMSEL 25 K
+                </td>
+                <td>Rp 27.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  TELKOMSEL 30 K
+                </td>
+                <td>Rp 32.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  TELKOMSEL 40 K
+                </td>
+                <td>Rp 42.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  TELKOMSEL 50 K
+                </td>
+                <td>Rp 52.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  TELKOMSEL 75 K
+                </td>
+                <td>Rp 77.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  TELKOMSEL 100 K
+                </td>
+                <td>Rp 102.000</td>
+              </tr>
+            </table>
+          </div>
+          <div id="harga" style="overflow-x: auto">
+            <table>
+              <tr>
+                <th colspan="2"><img src="img/operator/indosat.png" alt="INDOSAT" id="pulsa_telkomsel" /></th>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  INDOSAT 5 K
+                </td>
+                <td>Rp 7.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  INDOSAT 10 K
+                </td>
+                <td>Rp 12.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  INDOSAT 12 K
+                </td>
+                <td>Rp 14.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  INDOSAT 15 K
+                </td>
+                <td>Rp 17.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  INDOSAT 20 K
+                </td>
+                <td>Rp 22.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  INDOSAT 25 K
+                </td>
+                <td>Rp 27.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  INDOSAT 30 K
+                </td>
+                <td>Rp 32.000</td>
+              </tr>
+
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  INDOSAT 50 K
+                </td>
+                <td>Rp 52.000</td>
+              </tr>
+
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  INDOSAT 100 K
+                </td>
+                <td>Rp 102.000</td>
+              </tr>
+              <tr>
+                <td class="nama"><br /><br /></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+          <div id="harga" style="overflow-x: auto">
+            <table>
+              <tr>
+                <th colspan="2"><img src="img/operator/xl.png" alt="XL" id="pulsa_telkomsel" /></th>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  XL 5 K
+                </td>
+                <td>Rp 7.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  XL 10 K
+                </td>
+                <td>Rp 12.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  XL 15 K
+                </td>
+                <td>Rp 17.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  XL 25 K
+                </td>
+                <td>Rp 27.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  XL 30 K
+                </td>
+                <td>Rp 32.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  XL 50 K
+                </td>
+                <td>Rp 52.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  XL 100 K
+                </td>
+                <td>Rp 102.000</td>
+              </tr>
+              <tr>
+                <td class="nama"><br /><br /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="nama"><br /><br /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="nama"><br /><br /></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+          <div id="harga" style="overflow-x: auto">
+            <table>
+              <tr>
+                <th colspan="2"><img src="img/operator/axis.png" alt="AXIS" id="pulsa_telkomsel" /></th>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  AXIS 5 K
+                </td>
+                <td>Rp 7.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  AXIS 10 K
+                </td>
+                <td>Rp 12.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  AXIS 15 K
+                </td>
+                <td>Rp 17.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  AXIS 25 K
+                </td>
+                <td>Rp 27.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  AXIS 30 K
+                </td>
+                <td>Rp 32.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  AXIS 50 K
+                </td>
+                <td>Rp 52.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  AXIS 100 K
+                </td>
+                <td>Rp 102.000</td>
+              </tr>
+              <tr>
+                <td class="nama"><br /><br /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="nama"><br /><br /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="nama"><br /><br /></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+          <div id="harga" style="overflow-x: auto">
+            <table>
+              <tr>
+                <th colspan="2"><img src="img/operator/3.png" alt="TRI" id="pulsa_telkomsel" /></th>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  TRI 5 K
+                </td>
+                <td>Rp 7.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  TRI 8 K
+                </td>
+                <td>Rp 10.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  TRI 10 K
+                </td>
+                <td>Rp 12.000</td>
+              </tr>
+
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  TRI 15 K
+                </td>
+                <td>Rp 17.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  TRI 20 K
+                </td>
+                <td>Rp 22.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  TRI 25 K
+                </td>
+                <td>Rp 27.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  TRI 30 K
+                </td>
+                <td>Rp 32.000</td>
+              </tr>
+
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  TRI 50 K
+                </td>
+                <td>Rp 52.000</td>
+              </tr>
+
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  TRI 100 K
+                </td>
+                <td>Rp 102.000</td>
+              </tr>
+              <tr>
+                <td class="nama"><br /><br /></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+          <div id="harga" style="overflow-x: auto">
+            <table>
+              <tr>
+                <th colspan="2"><img src="img/operator/smartfren.png" alt="SMARTFREN" id="pulsa_SMARTFREN" /></th>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  SMARTFREN 5 K
+                </td>
+                <td>Rp 7.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  SMARTFREN 10 K
+                </td>
+                <td>Rp 12.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  SMARTFREN 15 K
+                </td>
+                <td>Rp 17.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  SMARTFREN 20 K
+                </td>
+                <td>Rp 22.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  SMARTFREN 25 K
+                </td>
+                <td>Rp 27.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  SMARTFREN 30 K
+                </td>
+                <td>Rp 32.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  SMARTFREN 50 K
+                </td>
+                <td>Rp 52.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  SMARTFREN 60 K
+                </td>
+                <td>Rp 62.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  SMARTFREN 75 K
+                </td>
+                <td>Rp 77.000</td>
+              </tr>
+              <tr>
+                <td class="nama">
+                  PULSA <br />
+                  SMARTFREN 100 K
+                </td>
+                <td>Rp 102.000</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir pulsa -->
+    <!-- kuota -->
+    <div class="kuota" id="kuota">
+      
+        <div class="container">
+          <div id="daftar_kuota">
+            <h3>kuota :</h3>
+            <p class="cara">klik pada tabel kuota untuk memesan kuota</p>
+          </div>
+          <div class="heading">
+            <h4>AXIS</h4>
+          </div>
+          <div class="isi">
+            <div class="batas">
+              <a href="https://api.whatsapp.com/send?phone=6285647715796&text=Tukuuu%20kuota%20Axis%20sing%201gb%205hari" target="_blank" rel="noopener noreferrer"><div class="barang">
+                <div class="gambar">
+                  <img src="img/operator/axis.png" alt="axis" />
+                </div>
+                <p>1 GB <br />(5 hari)</p>
+                <p>Rp 10.000</p>
+              </div>
+            </a>
+              <a href="https://api.whatsapp.com/send?phone=6285647715796&text=Tukuuu%20kuota%20Axis%20sing%201gb%2030hari" target="_blank" rel="noopener noreferrer"><div class="barang">
+                <div class="gambar">
+                  <img src="img/operator/axis.png" alt="axis" />
+                </div>
+                <p>1 GB <br />(30 hari)</p>
+                <p>Rp 14.000</p>
+              </div>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=6285647715796&text=Tukuuu%20kuota%20Axis%20sing%202gb%2030hari" target="_blank" rel="noopener noreferrer">
+              <div class="barang">
+                <div class="gambar">
+                  <img src="img/operator/axis.png" alt="axis" />
+                </div>
+                <p>2 GB <br />(30 hari)</p>
+                <p>Rp 25.000</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+          <div class="heading">
+            <h4>XL</h4>
+          </div>
+          <div class="isi">
+            <div class="batas">
+              <a href="https://api.whatsapp.com/send?phone=6285647715796&text=Tukuuu%20kuota%20XL%20sing%202gb%207hari" target="_blank" rel="noopener noreferrer">
+              <div class="barang">
+                <div class="gambar">
+                  <img src="img/operator/xl.png" alt="axis" />
+                </div>
+                <p>2 GB <br />(7 hari)</p>
+                <p>Rp 12.000</p>
+              </div>
+              </a>
+              <a href="https://api.whatsapp.com/send?phone=6285647715796&text=Tukuuu%20kuota%20XL%20sing%208gb%2030hari" target="_blank" rel="noopener noreferrer">
+              <div class="barang">
+                <div class="gambar">
+                  <img src="img/operator/xl.png" alt="axis" />
+                </div>
+                <p>8 GB <br />(30 hari)</p>
+                <p>Rp 32.000</p>
+              </div>
+              </a>
+            </div>
+          </div>
+          
+          <div class="heading">
+            <h4>TELKOMSEL</h4>
+          </div>
+          <div class="isi">
+            <div class="batas">
+              <a href="https://api.whatsapp.com/send?phone=6285647715796&text=Tukuuu%20kuota%20Telkomsel%20sing%202,5gb%205hari" target="_blank" rel="noopener noreferrer">
+              <div class="barang">
+                <div class="gambar">
+                  <br>
+                  <img src="img/operator/telkomsel.png" alt="axis" />
+                </div>
+                <p>2,5 GB <br />(5 hari)</p>
+                <p>Rp 12.000</p>
+              </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="heading">
+            <h4>TRI</h4>
+          </div>
+          <div class="isi">
+            <div class="batas">
+              <a href="https://api.whatsapp.com/send?phone=6285647715796&text=Tukuuu%20kuota%20Tri%20sing%201gb%205hari" target="_blank" rel="noopener noreferrer">
+              <div class="barang">
+                <div class="gambar">
+                  <img src="img/operator/3.png" alt="axis" />
+                </div>
+                <p>1,5 GB <br />(5 hari)</p>
+                <p>Rp 10.000</p>
+              </div>
+              </a>
+              <a href="https://api.whatsapp.com/send?phone=6285647715796&text=Tukuuu%20kuota%20Tri%20sing%20AON1,5gb" target="_blank" rel="noopener noreferrer">
+              <div class="barang">
+                <div class="gambar">
+                  <img src="img/operator/3.png" alt="axis" />
+                </div>
+                <p>AON 1,5 GB <br /><br /></p>
+                <p>Rp 14.000</p>
+              </div>
+              </a>
+            </div>
+          </div>
+          <div class="heading">
+            <h4 >SMARTFREN</h4>
+          </div>
+          <div class="isi">
+            <div class="batas">
+              <a href="https://api.whatsapp.com/send?phone=6285647715796&text=Tukuuu%20kuota%20Smartfren%20sing%20Unlimited%207hari" target="_blank" rel="noopener noreferrer">
+              <div class="barang">
+                <div class="gambar">
+                  <br />
+                  <img src="img/operator/smartfren.png" alt="axis" />
+                </div>
+                <p id="token">
+                  UNLIMITED <br />(7 hari)
+                </p>
+                <p>Rp 23.000</p>
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir kuota -->
+
+    <!-- awal token -->
+    <div class="token" >
+      <div class="container">
+        <div class="box">
+          <h1>TOKEN LISTRIK</h1>
+          <div class="kolom">
+            <table>
+              <tr>
+                <td id="listrik">Token 20.000</td>
+                <td>Rp 22.000</td>
+              </tr>
+              <tr>
+                <td>Token 50.000</td>
+                <td>Rp 52.000</td>
+              </tr>
+              <tr>
+                <td>Token 100.000</td>
+                <td>Rp 103.000</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir token -->
+
+    <!-- setor listrik  -->
+
+    <div class="setor">
+      <div class="container">
+        <div class="bingkai">
+          <div class="waiper">
+              <div class="box">
+                <h1>Setor Listrik</h1>
+                <p>Setor listrik lebih murah di ERI CELL</p>
+              </div>
+            <div class="box2">
+              <h1 id="top-up">BIAYA ADMIN</h1>
+              <div class="box-harga">
+                <p>Rp 3.000</p>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir stor listrik -->
+
+    <!-- top up -->
+    <div class="top-up">
+      <div class="container">
+        <div class="bingkai">
+          <div class="waiper">
+              <div class="box">
+                <h1>TOP UP <br> UANG DIGITAL</h1>
+                <p id="alamat">Top up uang digital <br>
+                  di ERI CELL</p>
+              </div>
+            <div class="box2">
+              <div class="box-harga">
+                <img src="img/e-wallet.png" alt="">
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir top up -->
+
+    <!-- box alamat -->
+    <div class="box-alamat">
+      <div class="container">
+        <div class="bingkai">
+          <div class="waiper">
+              <div class="box">
+                <h1>ALAMAT ERI CELL</h1>
+                <p>Ds.Pasangan RT 12 RW 04 <br> kec.Talang Kab.Tegal <br><br>Jalan pecakran no.53</p>
+              </div>
+            <div class="box2">
+              <h1>LINK GOOGLE MAP</h1>
+              <div class="box-harga">
+                <a target="_blank" href="https://goo.gl/maps/YdeMBmzmPNtwcdLD6"><p>MASUK</p></a>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- box-alamat -->
+
+    <div class="alamat">
+      <div class="container">
+        <div class="heading">
+          <h2>Google map :</h2>
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d990.1689991666434!2d109.15028732266038!3d-6.929276005929089!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb8dd67f83e17%3A0x6334933d1ceceea3!2sJl.%20Pecakran%20Pasangan%20No.1928%2C%20Pasangan%2C%20Kec.%20Talang%2C%20Kabupaten%20Tegal%2C%20Jawa%20Tengah%2052193!5e0!3m2!1sid!2sid!4v1651980701722!5m2!1sid!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="detail-alamat">
+      <div class="container">
+        <div class="heading">
+          <h2>Detail alamat</h2>
+          <div class="img">
+            <a target="_blank" href="img/Untitled-1.jpg"><img src="img/Untitled-1.jpg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div id="about"></div>
+    </div>
+
+    <div class="about">
+      <div class="container">
+        <div class="heading">
+        <h1>ABOUT</h1>
+        <img src="img/konter.jpeg" alt="">
+        <P><span> ERI CELL </span> di bangan sejak tahun 2020
+          yang ber alamatkan di desa pasangan komplek masjid baiturokhim nama <span> ERI CELL </span>  diambil dari nama pemiliknya yaitu 
+         <span> ERI HIDAYAT </span> dia adalah seorang mahasiswa dan juga conten creator </P><br>
+        <P>Di <span> ERI CELL </span> kalian dapat membeli berbagai transaksi digital yang diantaranya adalah pulsa, kuota, token listrik, setor listrik, top up e-wallet </P>
+        </div>
+        <div class="dasbord">
+          <div class="ikuti">
+            <h5>Hubungi Kami</h5>
+            <a href="https://web.facebook.com/renny.khasanah.3/" target="_blank" rel="noopener noreferrer"><li><i class="bi bi-facebook"></i>Facebook</li></a>
+            <a href="https://www.instagram.com/erisemonomono/" target="_blank" rel="noopener noreferrer"><li><i class="bi bi-instagram"></i>Instagram</li></a>
+            <a href="https://api.whatsapp.com/send?phone=6285647715796" target="_blank" rel="noopener noreferrer"><li><i class="bi bi-whatsapp"></i>Whatshapp</li></a>
+            <a href="https://www.youtube.com/channel/UC86U7UMu1GzpQ-o62a2wmTg" target="_blank" rel="noopener noreferrer"><li><i class="bi bi-youtube"></i>Youtube</li></a>
+          </div>
+
+          <div class="tentang">
+            <h5>Jelajahi Eri Cell</h5>
+            <a href="https://erihidayat06.github.io/erihidayat06/" target="_blank" rel="noopener noreferrer"><li>Tentang kami</li></a>
+          </div>
+        </div>
+        <div class="copy">
+          <p>&copy 2022 ERI HIDAYAT</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- script -->
+
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
